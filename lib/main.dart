@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter_internals/ui_updates_demo.dart';
+import 'package:flutter_internals/widget/todos.dart';
 
 void main() {
   runApp(const App());
@@ -15,9 +14,9 @@ class App extends StatelessWidget {
       theme: ThemeData(useMaterial3: true),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Flutter Internals'),
+            title: const Text('Todo-list'),
         ),
-        body: const UIUpdatesDemo(),
+          body: const Todos()
       ),
     );
   }
